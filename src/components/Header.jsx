@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import logoImg from "../assets/logo.jpg";
-import Button from "./UI/button";
+import Button from "./UI/Button.jsx";
 import CartContext from "../store/CartContext";
 import UserProgressContext from "../store/UserProgressContext";
 
