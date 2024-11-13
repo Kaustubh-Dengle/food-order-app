@@ -4,7 +4,7 @@ import Modal from "./UI/Modal";
 import CartContext from "../store/CartContext";
 import UserProgressContext from "../store/UserProgressContext";
 import Input from "./Input";
-import Button from "./UI/button.jsx";
+import Button from "./UI/button";
 import useHttp from "../hooks/useHttp";
 import Error from "./Error";
 
