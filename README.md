@@ -50,21 +50,6 @@ Ensure you have the following installed:
 5. **Open your browser**:
    Access the app at [http://localhost:3000](http://localhost:3000).
 
-## Folder Structure
-
-```
-food-order-app/
-├── public/
-├── src/
-│   ├── components/     # Reusable components
-│   ├── context/        # Context API setup
-│   ├── hooks/          # Custom hooks
-│   ├── styles/         # CSS Modules
-│   ├── utils/          # Utility functions
-│   └── App.js          # Main app component
-├── package.json
-└── README.md
-```
 
 ## Future Enhancements
 
