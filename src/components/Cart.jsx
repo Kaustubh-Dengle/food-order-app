@@ -4,6 +4,7 @@ import CartContext from "../store/CartContext";
 import { currencyFormatter } from "../util/formatter";
 import UserProgressContext from "../store/UserProgressContext";
 import CartItem from "./CartItem";
+import ReUButton from "./UI/ReUButton";
 
 export default function Cart() {
   const cartCtx = useContext(CartContext);
@@ -42,11 +43,11 @@ export default function Cart() {
       </ul>
       <p className="cart-total">{currencyFormatter.format(cartTotal)}</p>
       <p className="modal-actions">
-        <Button textOnly onClick={handleHideCart}>
+        <ReUButton textOnly onClick={handleHideCart}>
           Close
-        </Button>
+        </ReUButton>
         {cartCtx.items.length > 0 && (
-          <Button onClick={handleGoToCheckout}>Proceed to checkout</Button>
+          <ReUButton onClick={handleGoToCheckout}>Proceed to checkout</ReUButton>
         )}
       </p>
     </Modal>

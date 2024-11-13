@@ -2,6 +2,7 @@ import { useContext } from "react";
 import logoImg from "../assets/logo.jpg";
 import CartContext from "../store/CartContext";
 import UserProgressContext from "../store/UserProgressContext";
+import ReUButton from "./UI/ReUButton";
 
 export default function Header() {
   const cartCtx = useContext(CartContext);
@@ -21,9 +22,9 @@ export default function Header() {
         <h1>Pune Eats</h1>
       </div>
       <nav>
-        <Button textOnly onClick={handleShowCart}>
+        <ReUButton textOnly onClick={handleShowCart}>
           Cart ({totalCartItems})
-        </Button>
+        </ReUButton>
       </nav>
     </header>
   );

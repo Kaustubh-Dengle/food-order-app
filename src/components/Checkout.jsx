@@ -7,6 +7,7 @@ import Input from "./Input";
 // import Button from "./UI/button";
 import useHttp from "../hooks/useHttp";
 import Error from "./Error";
+import ReUButton from "./UI/ReUButton";
 
 const requestConfig = {
   method: "POST",
@@ -72,10 +73,10 @@ export default function Checkout() {
 
   let actions = (
     <>
-      <Button type="button" textOnly onClick={handleClose}>
+      <ReUButton type="button" textOnly onClick={handleClose}>
         Close
-      </Button>
-      <Button>Submit Order</Button>
+      </ReUButton>
+      <ReUButton>Submit Order</ReUButton>
     </>
   );
 
@@ -96,7 +97,7 @@ export default function Checkout() {
           minutes.
         </p>
         <p className="modal-actions">
-          <Button onClick={handleFinish}>Okay</Button>
+          <ReUButton onClick={handleFinish}>Okay</ReUButton>
         </p>
       </Modal>
     );
